@@ -60,6 +60,11 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
     public boolean hasCity(City city){
+        for (City c : this.cities){
+            if(c.compareTo(city) == 0)
+                return true;
+        }
+
         return false;
     }
 

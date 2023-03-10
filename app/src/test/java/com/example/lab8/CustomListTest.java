@@ -22,6 +22,7 @@ public class CustomListTest {
      */
     public CustomList MockCityList(){
         list = new CustomList(null,new ArrayList<>());
+        list.addCity(mockCity());
         return list;
     }
 
