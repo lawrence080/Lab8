@@ -49,8 +49,15 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.size();
     }
 
+    /**
+     * add city to the city list
+     * @param city the City object that is going to be added
+     */
     public void addCity(City city){
-
+        if(cities.contains(city)){
+            throw new IllegalArgumentException();
+        }
+        cities.add(city);
     }
 
 }
